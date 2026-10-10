@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - master
   workflow_dispatch:
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
@@ -34,7 +35,9 @@ jobs:
         run: npm ci || npm install
 
       - name: Build static files
-        run: npm run build
+        run: |
+          npm run build
+          cp dist/index.html dist/404.html || true
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
