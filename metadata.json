@@ -1,0 +1,6 @@
+{
+  "name": "1 Minuto Para Mí - HUV",
+  "description": "Pausas activas de 60 segundos diseñadas para el personal del Hospital Universitario del Valle. Ejercicios discretos, divertidos y sin registros para cuidar a quienes cuidan.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
